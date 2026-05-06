@@ -72,7 +72,7 @@ body {
   width: 100%;
   height: 100%;
   display: block;
-  background: linear-gradient(rgba(10, 10, 10, 0.7), var(--bg-dark)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1000&auto=format&fit=crop');
+  background: linear-gradient(rgba(10, 10, 10, 0.7), var(--bg-dark)), url('https://private-user-images.githubusercontent.com/278130987/588266202-a9f60d04-22c7-4a59-a2a1-173d2e3a61e0.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzgwNzE3NTgsIm5iZiI6MTc3ODA3MTQ1OCwicGF0aCI6Ii8yNzgxMzA5ODcvNTg4MjY2MjAyLWE5ZjYwZDA0LTIyYzctNGE1OS1hMmExLTE3M2QyZTNhNjFlMC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUwNlQxMjQ0MThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMjU5MzA0ZDc1YWUzYzFmZWEzZTA4ZDI0OTczMzdiMDg5MTY0NDQ4N2NmYTViM2QzOTBkNjYzNDdhNzZiNjhhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZqcGVnIn0.m4bW5nJGQ4jphiQsHyl4A6STuBSuq9LWqYSDy6j40Ho');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
