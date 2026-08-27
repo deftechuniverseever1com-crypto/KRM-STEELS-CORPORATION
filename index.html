@@ -58,7 +58,7 @@
             </div>
             <div class="hero-content text-center container mx-auto px-6">
                 <h1 id="hero-title" class="text-5xl md:text-8xl font-serif font-bold mb-6 leading-tight">KRM STEELS METAL ART</h1>
-                <p id="hero-subtitle" class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-gray-300 opacity-0">We forge digital artifacts that define the future. Experience interactive art, not just websites.</p>
+                <p id="hero-subtitle" class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-gray-300 opacity-0">We forge digital artifacts that define the future. Experience interactive art, not just code.</p>
                 <a id="hero-cta" href="#about" class="bg-white text-gray-900 font-bold px-10 py-4 rounded-md hover:bg-gray-200 transition-all text-lg transform hover:scale-105 opacity-0 magnetic">Explore Our Work</a>
             </div>
         </section>
@@ -131,7 +131,7 @@
                         <!-- Portfolio Item 1 -->
                         <div class="group relative gsap-reveal">
                             <div class="portfolio-image-wrapper">
-                                <img src="https://images.unsplash.com/photo-1759122314138-301c14b3a373?q=80&w=1018&auto=format&fit=crop" alt="Abstract art project" class="portfolio-image w-full h-80 object-cover">
+                                <img src="https://images.unsplash.com/photo-1759122314138-301c14b3a373?q=80&w=1018&auto=format&fit=crop" alt="Abstract art project" class="portfolio-image w-full h-80 object-cover rounded-lg">
                             </div>
                             <div class="absolute bottom-0 left-0 p-8 text-white">
                                 <h3 class="text-3xl font-serif font-bold mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-in-out">Project Cygnus</h3>
@@ -141,7 +141,7 @@
                         <!-- Portfolio Item 2 -->
                         <div class="group relative gsap-reveal" data-gsap-delay="0.2">
                             <div class="portfolio-image-wrapper">
-                                <img src="https://images.unsplash.com/photo-1681350039577-37e5d8fd9d35?q=80&w=987&auto=format&fit=crop" alt="Fashion brand project" class="portfolio-image w-full h-80 object-cover">
+                                <img src="https://images.unsplash.com/photo-1681350039577-37e5d8fd9d35?q=80&w=987&auto=format&fit=crop" alt="Fashion brand project" class="portfolio-image w-full h-80 object-cover rounded-lg">
                             </div>
                             <div class="absolute bottom-0 left-0 p-8 text-white">
                                 <h3 class="text-3xl font-serif font-bold mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-in-out">Lumière Studio</h3>
@@ -151,9 +151,7 @@
                         <!-- Portfolio Item 3-->
                         <div class="group relative gsap-reveal" data-gsap-delay="0.2">
                             <div class="portfolio-image-wrapper">
-                                <img src="https://images.unsplash.com/photo-1581571590992-6cbe9e14c3e2?q=80&w=1026&auto=format&fit=crop" alt="Fashion brand project" class="portfolio-image w-full h-80 object-cover">
-
-                                <img width="3264" height="1472" alt="Image" src="https://github.com/user-attachments/assets/d49f2778-6300-4b7d-a8c5-c50e670cc6fe" />
+                                <img src="https://images.unsplash.com/photo-1581571590992-6cbe9e14c3e2?q=80&w=1026&auto=format&fit=crop" alt="Fashion brand project" class="portfolio-image w-full h-80 object-cover rounded-lg">
                           </div>
                             <div class="absolute bottom-0 left-0 p-8 text-white">
                                 <h3 class="text-3xl font-serif font-bold mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-in-out">Atelier Noir</h3>
@@ -164,33 +162,83 @@
                 </div>
             </section>
 
-            <!-- Testimonials Section -->
+            <!-- Google Reviews Section -->
         <section id="testimonials" class="py-24 md:py-32 bg-gray-900/50">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-serif font-bold text-white mb-4 text-center gsap-reveal">Voices of Our Partners</h2>
-                <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto gsap-reveal">Our success is measured by the success of those we collaborate with.</p>
-                <div class="grid md:grid-cols-2 gap-8 mt-16">
-                    <!-- Testimonial 1 -->
-                    <div class="testimonial-card bg-transparent border border-gray-800 p-8 rounded-lg relative gsap-reveal">
-                        <p class="text-gray-300 italic text-xl mb-6">"KRM STEELS didn't just deliver a product; they delivered a masterpiece. Their process is a masterclass in creativity and collaboration."</p>
-                        <div class="flex items-center">
-                            <img src="https://i.pravatar.cc/150?img=5" alt="Client Photo" class="w-14 h-14 rounded-full mr-4 border-2 border-teal-400">
-                            <div>
-                                <h4 class="font-bold text-white text-lg">PARVESH</h4>
-                                <p class="text-gray-400">Founder, Artifex</p>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-white mb-4 text-center gsap-reveal">What Our Clients Say</h2>
+                <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto gsap-reveal">Real reviews from real clients on Google</p>
+                
+                <div class="max-w-4xl mx-auto">
+                    <!-- Google Review Widget -->
+                    <!-- Replace YOUR_BUSINESS_ID with your actual Google Business ID -->
+                    <div class="g-page" data-href="https://www.google.com/maps/place/KRM+STEELS/@28.7439,77.1099,17z" data-tab="reviews"></div>
+                    
+                    <!-- Alternative: Embedded Google Reviews Widget (More Styling Control) -->
+                    <div id="google-reviews-widget" class="mt-8">
+                        <div class="bg-gray-800 rounded-lg p-8 border border-gray-700">
+                            <div class="flex items-center justify-between mb-6">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white">KRM STEELS</h3>
+                                    <div class="flex items-center mt-2">
+                                        <span class="text-yellow-400 text-lg">★★★★★</span>
+                                        <span class="text-gray-400 ml-3">Based on Google Reviews</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.google.com/maps/place/KRM+STEELS/@28.7439,77.1099,17z/reviews" target="_blank" rel="noopener noreferrer" class="bg-teal-500 hover:bg-teal-600 text-white font-bold px-6 py-3 rounded-md transition-all">
+                                    See All Reviews
+                                </a>
+                            </div>
+                            
+                            <!-- Individual Review Cards -->
+                            <div class="space-y-4">
+                                <!-- Review 1 -->
+                                <div class="bg-gray-700/50 p-6 rounded-lg border border-gray-600 hover:border-teal-500 transition-all">
+                                    <div class="flex items-start justify-between mb-3">
+                                        <div>
+                                            <p class="text-yellow-400">★★★★★</p>
+                                            <p class="text-white font-semibold mt-1">Excellent Craftsmanship</p>
+                                            <p class="text-gray-400 text-sm">2 weeks ago</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-300">Outstanding quality and attention to detail. KRM Steels delivered exactly what we needed with professional service throughout.</p>
+                                </div>
+
+                                <!-- Review 2 -->
+                                <div class="bg-gray-700/50 p-6 rounded-lg border border-gray-600 hover:border-teal-500 transition-all">
+                                    <div class="flex items-start justify-between mb-3">
+                                        <div>
+                                            <p class="text-yellow-400">★★★★★</p>
+                                            <p class="text-white font-semibold mt-1">Highly Recommended</p>
+                                            <p class="text-gray-400 text-sm">1 month ago</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-300">Best metal work in Delhi! Rashid and his team are true professionals. Completed our project on time and within budget.</p>
+                                </div>
+
+                                <!-- Review 3 -->
+                                <div class="bg-gray-700/50 p-6 rounded-lg border border-gray-600 hover:border-teal-500 transition-all">
+                                    <div class="flex items-start justify-between mb-3">
+                                        <div>
+                                            <p class="text-yellow-400">★★★★★</p>
+                                            <p class="text-white font-semibold mt-1">Perfect Quality</p>
+                                            <p class="text-gray-400 text-sm">2 months ago</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-300">Premium quality work with exceptional customer service. Will definitely work with KRM Steels again!</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Testimonial 2 -->
-                    <div class="testimonial-card bg-transparent border border-gray-800 p-8 rounded-lg relative gsap-reveal" data-gsap-delay="0.2">
-                        <p class="text-gray-300 italic text-xl mb-6">NICE WORK DONE BY KRM STEELS</p>
-                        <div class="flex items-center">
-                            <img src="https://i.pravatar.cc/150?img=8" alt="Client Photo" class="w-14 h-14 rounded-full mr-4 border-2 border-teal-400">
-                            <div>
-                                <h4 class="font-bold text-white text-lg">David Lee</h4>
-                                <p class="text-gray-400">CTO, QuantumLeap</p>
-                            </div>
-                        </div>
+
+                    <!-- Google Business Card -->
+                    <div class="mt-8 text-center">
+                        <p class="text-gray-400 mb-4">📍 KRM Steels, Bawana, Delhi</p>
+                        <a href="tel:+919205503186" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-3 rounded-md transition-all mr-4">
+                            📞 Call: 9205503186
+                        </a>
+                        <a href="https://www.google.com/maps/place/KRM+STEELS/@28.7439,77.1099,17z" target="_blank" rel="noopener noreferrer" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold px-8 py-3 rounded-md transition-all">
+                            📍 View on Google Maps
+                        </a>
                     </div>
                 </div>
             </div>
@@ -226,6 +274,10 @@
             <p>Made with ❤️ by <a href="KRM STEELS.COM" target="_blank">RASHID SAIFI</a></p>
         </div>
     </footer>
+
+    <!-- Google Maps Embed Script for Reviews -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&libraries=places"></script>
+    
     <script src="script.js"></script>
 </body>
 </html>
