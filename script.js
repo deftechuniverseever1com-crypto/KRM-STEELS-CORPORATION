@@ -53,11 +53,12 @@ magneticElements.forEach(el => {
 
 // --- Interactive Particle Background ---
 const canvas = document.getElementById('particle-canvas');
-const ctx = canvas.getContext('2d');
+const ctx = canvas ? canvas.getContext('2d') : null;
 let particles = [];
 let mouse = { x: null, y: null };
 
 function resizeCanvas() {
+    if (!canvas) return;
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 }
@@ -93,6 +94,7 @@ class Particle {
         if (this.size > 0.2) this.size -= 0.01;
     }
     draw() {
+        if (!ctx) return;
         ctx.fillStyle = this.color;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
@@ -101,6 +103,7 @@ class Particle {
 }
 
 function initParticles() {
+    if (!canvas || !ctx) return;
     for (let i = 0; i < 100; i++) {
         particles.push(new Particle());
     }
@@ -108,6 +111,7 @@ function initParticles() {
 initParticles();
 
 function animateParticles() {
+    if (!canvas || !ctx) return;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (let i = 0; i < particles.length; i++) {
         particles[i].update();
@@ -219,3 +223,58 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// --- Contact form submission (uses Formspree) ---
+(function() {
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+    const FORMSPREE_URL = 'https://formspree.io/f/xqpkzjwv'; // correct form ID
+
+    if (!contactForm) return;
+
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Disable submit button to prevent duplicate submits
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        if (submitBtn) submitBtn.disabled = true;
+
+        const data = new FormData(contactForm);
+
+        fetch(FORMSPREE_URL, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json'
+            },
+            body: data
+        }).then(async (response) => {
+            if (response.ok) {
+                // success
+                if (formStatus) {
+                    formStatus.classList.remove('hidden');
+                    formStatus.textContent = 'Thank you! Your message has been sent successfully.';
+                } else {
+                    alert('Message sent successfully.');
+                }
+                contactForm.reset();
+            } else {
+                // try parse JSON error
+                let err = {};
+                try { err = await response.json(); } catch (e) { err = { message: 'Unknown error' }; }
+                console.error('Formspree error', err);
+                if (err && err.errors) {
+                    alert(err.errors.map(x => x.message).join('\n'));
+                } else if (err && err.message) {
+                    alert(err.message);
+                } else {
+                    alert('Unable to send message. Please try again later.');
+                }
+            }
+        }).catch((error) => {
+            console.error('Network error while submitting form', error);
+            alert('Network error: please check your connection and try again.');
+        }).finally(() => {
+            if (submitBtn) submitBtn.disabled = false;
+        });
+    });
+})();
