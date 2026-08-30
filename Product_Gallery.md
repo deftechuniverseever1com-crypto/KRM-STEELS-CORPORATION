@@ -44,7 +44,7 @@ Showcase of our premium metal craftsmanship and steel work projects.
 1. Upload your images to `media/images/` folder
 2. Use this format in markdown:
    ```markdown
-   ![Alt text](./media/images/filename.jpg "Optional title")
+   ![Alt text]("C:\Users\Rashid\Downloads\download (3).jpeg" "Optional title")
    ```
 
 ### Adding Videos:
